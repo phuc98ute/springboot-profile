@@ -37,12 +37,14 @@
             </activation>
             <properties>
                 <vn.phucvo.helloMessage>Dev environment</vn.phucvo.helloMessage>
+                <dev.environment>dev</dev.environment>
             </properties>
         </profile>
         <profile>
             <id>prod</id>
             <properties>
                 <vn.phucvo.helloMessage>Prod environment</vn.phucvo.helloMessage>
+                <dev.environment>prod</dev.environment>
             </properties>
         </profile>
     </profiles>
