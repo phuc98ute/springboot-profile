@@ -1,0 +1,18 @@
+#set active profile
+spring:
+  profiles:
+    active: prod #switch dev & prod profile here
+#define dev profile, require an empty line at this if has not comment
+---
+spring:
+  config:
+    activate:
+      on-profile: dev
+helloMessage: "Dev environment!"
+#define prod profile, require an empty line at this if has not comment
+---
+spring:
+  config:
+    activate:
+      on-profile: prod
+helloMessage: "Prod environment!"
